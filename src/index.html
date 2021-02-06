@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/logo/favicon.png" sizes="16x16"/>
+    <title>Vitr | Dashboard </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header h-16 ml-5">
+        <div class="header-toggle relative cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </div>
+        <div class="flex cursor-pointer" id="user">
+            <div class="bg-indigo-50 h-8 w-8">
+            </div>
+            <div class="flex mx-2 items-center" >
+                <div class="md:flex hidden flex-col pr-10">
+                    <h3 class="text-xs"> Wisnu Putra Pratama</h3>
+                    <h3 class="text-xss text-gray-400"> wisnuputrapratama24@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="header-user bg-white shadow-lg opacity-100 w-56 mt-12 h-auto pb-3 absolute right-0 mr-8">
+               <p class="text-center text-sm font-medium px-2 py-5 text-gray-800">Logged in 10 min ago</p>
+               <div class="ml-12">
+
+                   <a href="#" class="flex items-center justify-start mb-5 text-light text-black text-sm">
+                    <i class="fas fa-user-alt"></i>
+                    <span class="pl-4">Profile</span>
+                   </a>
+                   <a href="#" class="flex items-center justify-start mb-5 text-light text-black text-sm">
+                    <i class="fas fa-cog"></i>
+                    <span class="pl-4">Settings</span>
+                   </a>
+                   <a href="#" class="flex items-center justify-start mb-5 text-light text-black text-sm">
+                    <i class="fas fa-calendar-week"></i>
+                    <span class="pl-4">Activity</span>
+                   </a href="#">
+                    
+                   <hr class="mb-5">
+
+                   <a href="#" class="flex items-center justify-start mb-5 text-light text-black text-sm">
+                    <i class="fas fa-sign-out-alt text-red-400"></i>
+                    <span class="pl-4 text-red-400">Logout</span>
+                   </a>
+               </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    
+    <div class="sidebar" id="sidebar">
+        <div class="mt-5 flex flex-row items-center justify-center ">
+            <img src="./assets/img/logo/ava.png" class="h-10 mx-auto" alt="">
+        </div>
+        <hr class="mt-6">
+        <nav class="sidebar-list">
+            <a href="./index.html" class="sidebar-link active" id="nav-link">
+                <i class="fas fa-home"></i>
+                <span class="sidebar-name">
+                    Dashboard
+                </span>
+            </a>
+
+            <a href="./pages/error-page.html" class="sidebar-link" id="nav-link">
+                <i class="fas fa-pencil-alt"></i>
+                <span class="sidebar-name">
+                    Error Page
+                </span>
+            </a>
+            <a href="./pages/blank-page.html" class="sidebar-link" id="nav-link">
+                <i class="fas fa-palette"></i>
+                <span class="sidebar-name">
+                    Blank Page
+                </span>
+            </a>
+            <a href="" class="sidebar-link dropdown" id="nav-link">
+                <i class="fas fa-users"></i>
+                <span class="sidebar-name">
+                    Auth
+                </span>
+                <i class="fas fa-chevron-up arrow"></i>
+            </a>
+            <div class="dropdown-container">
+                <a href="./pages/auth/login.html" class="flex items-center"> 
+                    <i class="far fa-square px-3 mb-2"></i>
+                    <span class="dropdown-link">
+                        Login
+                    </span>
+                </a>
+                <a href="./pages/auth/register.html" class="flex items-center"> 
+                    <i class="far fa-square px-3 my-2"></i>
+                    <span class="dropdown-link">
+                        Register
+                    </span>
+                </a>
+                <a href="./pages/auth/forget_password.html" class="flex items-center"> 
+                    <i class="far fa-square px-3 my-2"></i>
+                    <span class="dropdown-link">
+                        Forget Password
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- End Sidebar -->
+
+
+    <!-- Content -->
+    <main class="main mt-5 ml-5 px-4">
+        <h1 class="md:text-2xl text-xl font-medium text-black capitalize">Overview</h1>
+
+        <div class="grid grid-cols-6 gap-10 mt-6">
+
+            <div class="md:col-span-4 col-span-6">
+
+                <!-- Card -->
+                <div class="grid grid-cols-3 md:gap-x-5 gap-x-2">
+
+                    <div class="h-24 bg-white shadow-md">
+                        <h5 class="text-gray-400 text-xs px-4 py-3">Total Profit</h5>
+                        <div class="flex items-center px-4">
+                            <h3 class="md:text-3xl text-xl font-bold">$120.00</h3>
+                            <span class="text-green-300 md:text-sm text-xs font-medium pl-2">+ 5.09%</span>
+                        </div>
+                    </div>
+
+                    <div class="h-24 bg-white shadow-md">
+                        <h5 class="text-gray-400 text-xs px-4 py-3">Total Order</h5>
+                        <div class="flex items-center px-4">
+                            <h3 class="md:text-3xl text-xl font-bold">12.000</h3>
+                            <span class="text-green-300 md:text-sm text-xs font-medium pl-2">+ 1.09%</span>
+                        </div>
+                    </div>
+                    <div class="h-24 bg-white shadow-md">
+                        <h5 class="text-gray-400 text-xs px-4 py-3">Total Users</h5>
+                        <div class="flex items-center px-4">
+                            <h3 class="md:text-3xl text-xl font-bold">120.024</h3>
+                            <span class="text-red-300 md:text-sm text-xs font-medium pl-2">- 0.09%</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Card -->
+
+                <!-- Sales Report -->
+                <div class="bg-white shadow-md mt-5 px-4 py-5">
+                    <h4 class="font-medium">Sales Report</h4>
+                    <hr class="my-3">
+
+                    <div class="relative" style="z-index: 2; height:40vh;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <!-- End Sales Report -->
+
+               
+            </div>
+
+            <div class="md:col-span-2 md:block hidden md:mr-8">
+                <div class="bg-white shadow-md px-4 py-5">
+                    <h4 class="font-medium">Top Selling Product</h4>
+                    <hr class="my-3">
+                    <div class="h-auto">
+                        <table class="text-xs table-fixed w-full" id="table" >
+                            <tbody>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/1.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/2.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/3.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/4.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/5.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="w-3/12">
+                                        <img src="./assets/img/product/6.png" class="h-10" />
+                                    </td>
+                                    <td width="w-6/12">
+                                        SL ANDRIDGE SHOES
+                                    </td>
+                                    <td class="font-medium w-3/12">
+                                        1.260
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid mr-8">
+            <!-- Recent Orders -->
+            <div>
+                <div class="bg-white shadow-md mt-5 px-4 py-5">
+            <h4 class="font-medium">Recent Orders</h4>
+            <hr class="my-3">
+            <div>
+                <table class="text-xs table-auto w-full" id="table" >
+                    <thead class="text-left ">
+                        <th class="w-1/12">No</th>
+                        <th class="w-2/12">No Transaction</th>
+                        <th class="w-3/12">Date</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td >
+                                ABC234810642#
+                            </td>
+                            <td>
+                                Saturday, January 23, 2021
+                            </td>
+                            <td>
+                                Wisnu Pratama
+                            </td>
+                            <td>
+                                <span class="py-1 rounded-md px-2 bg-green-300"> Complete </span>
+                            </td>
+                            <td>
+                                $128
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                ABC234810642#
+                            </td>
+                            <td>
+                                Saturday, January 23, 2021
+                            </td>
+                            <td>
+                                Wisnu Pratama
+                            </td>
+                            <td>
+                                <span class="py-1 rounded-md px-2 bg-yellow-300"> Pending </span>
+                            </td>
+                            <td>
+                                $128
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td >
+                                ABC234810642#
+                            </td>
+                            <td>
+                                Saturday, January 23, 2021
+                            </td>
+                            <td>
+                                Wisnu Pratama
+                            </td>
+                            <td>
+                                <span class="py-1 rounded-md px-2 bg-red-400"> Canceled </span>
+                            </td>
+                            <td>
+                                $128
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                ABC234810642#
+                            </td>
+                            <td>
+                                Saturday, January 23, 2021
+                            </td>
+                            <td>
+                                Wisnu Pratama
+                            </td>
+                            <td>
+                                <span class="py-1 rounded-md px-2 bg-green-300"> Complete </span>
+                            </td>
+                            <td>
+                                $128
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                </div>
+            </div>
+            <!-- End Recent Orders -->
+        </div>
+        <footer class="mt-10 text-sm text-gray-600">
+            Copyright &copy; 2021 &bull; by <span class="text-black font-medium"> Wisnu Putra Pratama </span>
+        </footer>
+    </main>
+    <!-- End Content -->
+
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main,.js"></script>
+</body>
+</html>
